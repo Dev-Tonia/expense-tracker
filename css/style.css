@@ -29,12 +29,12 @@ h1 {
   position: relative;
 }
 .form-section,
-.detail-section {
+.detail-section-wrapper {
   width: 50%;
-  min-height: 100vh;
 }
 
 .form-section {
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(../img/bg.png) no-repeat center center/cover;
   color: white;
@@ -56,12 +56,12 @@ h1 {
 .expenditure-header {
   margin-bottom: 20px;
 }
-.detail-section .right-section {
+.detail-section-wrapper .right-section {
   display: flex;
   align-items: flex-end;
   justify-content: end;
 }
-.detail-section .container {
+.detail-section-wrapper .container {
   margin-top: 50px;
 }
 .expenditure-content {
@@ -176,7 +176,7 @@ input::-webkit-inner-spin-button {
     margin-bottom: 50px;
   }
   .form-section,
-  .detail-section {
+  .detail-section-wrapper {
     width: 100%;
   }
   .quotes {
