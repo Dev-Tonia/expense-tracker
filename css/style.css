@@ -35,7 +35,7 @@ h1 {
 
 .form-section {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
     url(../img/bg.png) no-repeat center center/cover;
   color: white;
 }

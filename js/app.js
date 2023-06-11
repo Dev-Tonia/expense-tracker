@@ -66,9 +66,18 @@ const displayExpense = function () {
   <h3 class="right-section">&#x20A6; ${amtEl.value}</h3>
 </div>
   `;
-
-  expenseEl.value = amtEl.value = "";
   detailedSecEl.innerHTML += html;
+
+  const mq = window.matchMedia("(max-width: 600px)");
+
+  if (mq.matches) {
+    // window width is at 600px and below
+
+    document
+      .querySelector(".expenditure-content")
+      .scrollIntoView({ behavior: "smooth" });
+  }
+  expenseEl.value = amtEl.value = "";
   closeModal();
 };
 const getQuote = async function () {
@@ -98,5 +107,5 @@ const displayQuote = async function () {
   closeBtnEl.addEventListener("click", closeModal);
   submitBtnEl.addEventListener("click", displayExpense);
   displayQuote();
-  setInterval(displayQuote, 5000);
+  setInterval(displayQuote, 10000);
 })();
