@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+    <title>Expense Tracker</title>
+  </head>
+  <body>
+    <section class="">
+      <div class="flex-container">
+        <div class="form-section">
+          <div class="form-section-wrapper">
+            <div class="container">
+              <h1>Budget Calculator</h1>
+              <div class="budget-wrapper">
+                <div class="sec-1">
+                  <p>Budget</p>
+                  <h2>&#x20A6; <span>00</span></h2>
+                </div>
+
+                <div class="sec-2">
+                  <p class="hidden error">
+                    Enter the budget you want to work with
+                  </p>
+                  <input type="number" name="" id="" />
+
+                  <div>
+                    <button class="btn addBtn">Add Budget</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="quotes-wrapper">
+                <h2>Quotes to get you going</h2>
+                <p class="quotes">
+                  To give hope to someone occurs when you teach them how to use
+                  the tools to do it for themselves.
+                </p>
+                <p class="author">--Byron Pulsifer--</p>
+              </div>
+              <div class="open-modal">
+                <button class="btn open-btn">Enter expenditure</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="detail-section">
+          <div class="container">
+            <div class="expenditure-header">
+              <h3 class="left-section">What spent on</h3>
+              <h3 class="right-section">Amount spent</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="modal hidden">
+      <div class="btn-wrapper">
+        <button class="btn close-btn">X</button>
+      </div>
+      <div class="modal-wrapper">
+        <h1>What are Your expenditure today</h1>
+        <p class="error hidden modal-error">
+          Your budget was too small for your expenditure.
+        </p>
+        <div class="form">
+          <div>
+            <p class="hidden error exp-error">
+              Enter what you want spend the money on
+            </p>
+            <p class="hidden error dig-error">
+              The value of this field can't be a digit
+            </p>
+            <input type="text" name="" id="" placeholder="Enter an Expense" />
+          </div>
+          <div>
+            <p class="hidden error amt-error">
+              Enter the amount you want to spend
+            </p>
+            <input type="number" name="" id="" placeholder="Amount spent" />
+          </div>
+          <div class="btn-wrapper">
+            <button class="btn submit-btn">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>
